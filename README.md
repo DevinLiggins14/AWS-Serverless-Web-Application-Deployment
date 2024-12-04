@@ -31,7 +31,32 @@
 ### **Prerequisites**  
 - Have an [AWS account](https://aws.amazon.com/console/)   
 
- ##  Step 1: Create a New API
+
+ ##  Step 1: Create DynamoDB table and Lambda Functions
+<img src="https://github.com/user-attachments/assets/3c73e1c2-8c94-4c32-bb6a-551b915776eb"/>
+
+<br/>  We will create 2 different Lambda Functions, 1 for GET and 1 for POST, and then test them with the DynamoDB table <br/>
+<br/>  <br/>
+
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<img src=""/>
+
+<br/> <br/>
+
+ 
+<img src=""/>
+
+<br/>  <br/>
+
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<img src=""/>
+
+
+ ##  Step 2: Create API to trigger Lambda Functions and S3 static web hosting
 <img src=""/>
 
 <br/>  <br/>
