@@ -1,9 +1,10 @@
 # AWS-Serverless-Web-Application-Deployment
 <h2>Description</h2>
-<br/> In this project we will host a static web app, create a rest API, use serverless computing, authenticate users, store data within a NoSQL DB, translate URL, and improve performance via caching
+<br/> In this project we will deploy a serverless web application built on AWS, optimized for scalability and low maintenance. It uses CloudFront to deliver static content from S3 Bucket and API Gateway to handle dynamic requests processed by Lambda functions, with DynamoDB for data storage. Optional integrations include Route 53 for custom domains and Cognito for user authentication, making it a flexible and production ready!
+
 <br />
 <br/> Project Architecture: <br/>
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/cc3adab1-a2fd-4edc-b22b-39352f5520a4"/>
 
 <img src=""/>
 <h2> Services involved: </h2>
