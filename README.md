@@ -167,28 +167,31 @@ def lambda_handler(event, context):
 <img src="https://github.com/user-attachments/assets/a38426d2-c7f7-4619-96fa-52fe12aafc7f"/>
 <img src="https://github.com/user-attachments/assets/fa144fa3-f6de-4f20-a81d-8be2b61e261a"/>
 
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
+<br/> Now to test the GET Method select test at the API console and hit enter to view the DB table conents <br/>
+<img src="https://github.com/user-attachments/assets/bce1ccdd-27f8-4d28-8ca3-b34a235be56c"/>
+<br/> Now let's deploy our API and pick a stage name <br/>
+<img src="https://github.com/user-attachments/assets/af10429b-6b5a-4b35-a34d-379ef07cc097"/>
+<br/> Now there is an invoke url in the stage details we can use to invoke the Lambda Functions. Put that url in the API scripts.js so that when we use get student data in the app it will invoke data from the DynamoDB table. For example: <br/>
+<img src="https://github.com/user-attachments/assets/ed3a7309-de5b-40bb-8606-8a89a652cca3"/>
+<br/> Next enable CORS GET, POST, and save  <br/>
+<img src="https://github.com/user-attachments/assets/beeac4ef-1d5c-4657-80d4-b314ba3e2cd1"/>
 
-<img src=""/>
+<br/> Now go to S3 Bucket and create an S3 bucket to host the application (leave all settings as default) <br/> 
+<img src="https://github.com/user-attachments/assets/2f1d7058-2769-44d4-b8f5-d88027bcacb4"/>
 
-<br/>  <br/>
+<br/> Next add and upload index.html and API scripts.js <br/>
 
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/55eda79e-70b6-4a86-88e8-69102a2db26c"/>
 
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
+<br/> Now to configure the S3 Bucket, navigate to properties and enable static web hosting. Put index.html for the index document value <br/>
+<img src="https://github.com/user-attachments/assets/031725bd-5494-42dd-8b75-e0cf450e165b"/>
+<br/> We are now given an endpoint for the website however it is not accessable <br/>
+<img src="https://github.com/user-attachments/assets/d589b3ca-1b72-4f9d-85ad-63bc5eafb48c"/>
+<br/> How come? This is for 2 reasons: 1 Permissions block all public access and 2 an S3 Bucket policy must be created to grant public access. In the permissions tab enable the public access so it is no longer blocked  <br/>
+<img src="https://github.com/user-attachments/assets/9a26d282-81b9-4aee-9931-076e7873346f"/>
+<br/> Next enter an S3 Bucket Policy (A dev policy granting all access can be found under worker scripts)  <br/>
 
-
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/a50f57b5-d63e-4c4f-bec6-8549956809c0"/>
 <img src=""/>
 <img src=""/>
 <img src=""/>
