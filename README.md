@@ -92,10 +92,52 @@ def lambda_handler(event, context):
 <img src="https://github.com/user-attachments/assets/f0f693fc-1126-46ab-9e07-60714259a1c6"/>
 <br/> By clicking test we invoke the Lambda Function causing this Function to go to DynamoDB table and try to get data from the table. (This is why we needed to create the IAM polciy). We can see the output from the table is [] blank because our table does not contain any items: <br/>
 <img src="https://github.com/user-attachments/assets/f38f2e10-ecec-4206-9a7b-d73cd837f1d5"/>
-<br/>  <br/>
-<img src=""/>
+<br/> Now lets create our Lambda Function to add data to the DynamoDB table (POST). Similar to the steps above, create the function with python runtime and use the same IAM role as before. <br/>
+<img src="https://github.com/user-attachments/assets/128eb89d-5c6d-42a1-a5da-db582b89fa66"/>
 
-<br/>  <br/>
+<br/> Now again let's add our code however this time it will be to add data (Can be found under worker_scripts) <br/>
+
+```.py
+import json
+import boto3
+
+# Create a DynamoDB object using the AWS SDK
+dynamodb = boto3.resource('dynamodb')
+# Use the DynamoDB object to select our table
+table = dynamodb.Table('studentData')
+
+# Define the handler function that the Lambda service will use as an entry point
+def lambda_handler(event, context):
+    # Extract values from the event object we got from the Lambda service and store in variables
+    student_id = event['studentid']
+    name = event['name']
+    student_class = event['class']
+    age = event['age']
+    
+    # Write student data to the DynamoDB table and save the response in a variable
+    response = table.put_item(
+        Item={
+            'studentid': student_id,
+            'name': name,
+            'class': student_class,
+            'age': age
+        }
+    )
+    
+    # Return a properly formatted JSON object
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Student data saved successfully!')
+    }
+```
+<br/> This function inserts a new item into the DynamoDB table studentData using values provided in the Lambda event object, such as studentid, name, class, and age. After successfully writing the data, it returns a JSON response indicating success with a status code of 200.
+
+
+
+
+
+
+<br/>
 
 <img src=""/>
 
