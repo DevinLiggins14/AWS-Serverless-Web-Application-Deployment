@@ -57,7 +57,7 @@
 
 
  ##  Step 2: Create API to trigger Lambda Functions and S3 static web hosting
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/f3f59313-4559-4468-b585-2cbfcbcb9d5f"/>
 
 <br/>  <br/>
 
