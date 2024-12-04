@@ -130,15 +130,20 @@ def lambda_handler(event, context):
         'body': json.dumps('Student data saved successfully!')
     }
 ```
-<br/> This function inserts a new item into the DynamoDB table studentData using values provided in the Lambda event object, such as studentid, name, class, and age. After successfully writing the data, it returns a JSON response indicating success with a status code of 200.
+<br/> This function inserts a new item into the DynamoDB table studentData using values provided in the Lambda event object, such as studentid, name, class, and age. After successfully writing the data, it returns a JSON response indicating success with a status code of 200.<br/>
 
+<br/> After deploying the code we must test our function. Enter the following key and values for the event JSON (values can be custom) <br/>
 
+```JSON
+{
+  "studentid": "12345",
+  "name": "John Doe",
+  "class": "10",
+  "age": 15
+}
+```
 
-
-
-
-<br/>
-
+<br/> Save and click on test <br/>
 <img src=""/>
 
 <br/> <br/>
