@@ -144,37 +144,11 @@ def lambda_handler(event, context):
 ```
 
 <br/> Save and click on test <br/>
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/360ab534-cb86-45ea-97cc-0620b87391ea"/>
 
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
-
-<img src=""/>
-
-<br/>  <br/>
-
-<img src=""/>
-
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
-<br/> <br/>
-<img src=""/>
-
- 
-<img src=""/>
-
-<br/>  <br/>
-
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<img src=""/>
+<br/> It returned successful. Go to the DynamoDB table and refresh to see if the data was added <br/>
+<img src="https://github.com/user-attachments/assets/43339f09-92a2-4b78-b6a9-f080b2e2c596"/>
+<br/> The Lambda Functions have now been successfully tested with the DynamoDB table and is working properly!  <br/>
 
 
  ##  Step 2: Create API to trigger Lambda Functions and S3 static web hosting
@@ -209,6 +183,33 @@ def lambda_handler(event, context):
 <br/> <br/>
 <img src=""/>
 
+
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<img src=""/>
+
+<img src=""/>
+<br/> <br/>
+<img src=""/>
+
+<img src=""/>
+
+<br/>  <br/>
+
+<img src=""/>
+
+<br/> <br/>
+<img src=""/>
+<br/> <br/>
+<img src=""/>
+<br/> <br/>
+<img src=""/>
+
+ 
+<img src=""/>
+
+<br/>  <br/>
 
 <img src=""/>
 <img src=""/>
