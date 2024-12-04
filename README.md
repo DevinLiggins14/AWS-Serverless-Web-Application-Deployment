@@ -154,14 +154,18 @@ def lambda_handler(event, context):
  ##  Step 2: Create API to trigger Lambda Functions and S3 static web hosting
 <img src="https://github.com/user-attachments/assets/f3f59313-4559-4468-b585-2cbfcbcb9d5f"/>
 
-<br/>  <br/>
+<br/> Next we will create the API Gateway and S3 bucket. The API Gateway will trigger the Lambda Functions to retrieve data and put data in the DynamoDB table. After creating the API we will put the API endpoint in scripts.js (under worker_scripts). Index.html and scripts.js will go within the S3 Bucket to host our website. <br/>
 
+<br/> First let's create the API Gateway. Navigate to API Gateway and choose REST --> New API --> Edge-optimized <br/>
+<img src="https://github.com/user-attachments/assets/06469665-a50f-487b-ad32-8a10f0b6ade4"/>
+<br/> We choose edge-optimized instead of regional because regional only accepts users from within the same region we are using (us-east-2) where a the edge-optimized allows users from around the world. This means that end users can access our application from anywhere. <br/>
 
-<img src=""/>
+<br/> Now to create the GET and POST methods. Click create method --> choose GET --> Lambda Integration to trigger Lambda Functions --> Choose the corresponding function (getStudent for GET method).   <br/>
 
-<br/>  <br/>
-
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/0839f686-d65f-4092-bc5f-19fe3b5b7f25"/>
+<br/> Repeat steps for the POST method and confirm by checking the trigger for both functions  <br/>
+<img src="https://github.com/user-attachments/assets/a38426d2-c7f7-4619-96fa-52fe12aafc7f"/>
+<img src="https://github.com/user-attachments/assets/fa144fa3-f6de-4f20-a81d-8be2b61e261a"/>
 
 <br/> <br/>
 <img src=""/>
