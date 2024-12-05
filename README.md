@@ -22,7 +22,7 @@
 
 ### **Notes for Usage**
 1. **Required Services**: S3, API Gateway, Lambda, DynamoDB.
-2. **Optional Services**: Route53 (for custom domains), CloudFront (for faster performance), Cognito (for user authentication).  
+2. **Optional Services**: Route53 (for custom domains) and Cognito (for user authentication).  
 
 
 
