@@ -206,7 +206,7 @@ def lambda_handler(event, context):
 <br/> Yes now we have deployed a fully functional serverless webapp from within AWS! <br/>
 
 ## Step 3: Place Cloudfront in front of the S3 Bucket
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/9522cc9d-8500-4eeb-82fd-6d017b148af9"/>
 <br/> The web app is fully functionl however it is not secure and uses HTTP instead of HTTPS. This means that users interact directly with our S3 which is not good practice. <br/> 
 <br/> Navigate to CloudFront --> create distribution --> pick the S3 bucket Domain --> Origin access control --> create new OAC --> Default root object = index.html <br/>
 <img src="https://github.com/user-attachments/assets/249a2950-f3db-444d-812a-3977cc7e4efc"/>
@@ -224,7 +224,7 @@ def lambda_handler(event, context):
 
 
 
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/a0a4f65b-e1cc-42b8-811c-7bd860e40574"/>
 
 <br/> Creating a Cognito User Pool to secure the API Gateway adds an authentication layer, ensuring that only authorized users can access the apps backend services. It helps manage user identities and integrates seamlessly with other AWS services, allowing for secure API access. This enhances security by preventing unauthorized access while providing easy user management. <br/>
 
@@ -241,7 +241,7 @@ aws cognito-idp initiate-auth \
   --auth-parameters USERNAME=<username>,PASSWORD=<password>
 ```
 <br/> The encrypted token will be returned in the output. Lastly copy and paste the auth token and your users credentials should be shown in an output similar to this one. <br/>
-<img src="https://github.com/user-attachments/assets/0ed2efc6-4666-4ac4-963d-9663d46ca064"/>
+<img src="https://github.com/user-attachments/assets/b8cfe103-d3a4-4a88-bb80-3c02e1330e92"/>
 
  
 <br/> Congratulations! This project successfully delivered a fully functional, serverless web application leveraging AWS services like API Gateway, Lambda, DynamoDB, S3, and CloudFront. With Cognito integration, we secured the API Gateway, ensuring authentication and user management. The system was designed to efficiently handle student data, demonstrating the power and scalability of modern serverless architectures. This marks the completion of a significant achievement in creating a secure, scalable, and production-ready application. Great work! 🎉
