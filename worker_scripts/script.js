@@ -1,5 +1,5 @@
 // Add your API endpoint here
-var API_ENDPOINT = "https://a99lai6imb.execute-api.us-east-2.amazonaws.com/prod/";
+var API_ENDPOINT = "https://a99lai6imb.execute-api.us-east-2.amazonaws.com/prod";
 
 // AJAX POST request to save student data
 document.getElementById("savestudent").onclick = function() {
@@ -17,7 +17,7 @@ document.getElementById("savestudent").onclick = function() {
     }
 
     $.ajax({
-        url: API_ENDPOINT,  // Root path for POST
+        url: API_ENDPOINT,  // Updated to the new URL
         type: 'POST',
         data: JSON.stringify(inputData),
         contentType: 'application/json; charset=utf-8',
@@ -34,7 +34,7 @@ document.getElementById("savestudent").onclick = function() {
 // AJAX GET request to retrieve all students
 document.getElementById("getstudents").onclick = function() {
     $.ajax({
-        url: API_ENDPOINT,  // Root path for GET
+        url: API_ENDPOINT,  // Updated to the new URL
         type: 'GET',
         contentType: 'application/json; charset=utf-8',
         success: function(response) {
