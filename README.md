@@ -206,7 +206,7 @@ def lambda_handler(event, context):
 <br/> Yes now we have deployed a fully functional serverless webapp from within AWS! <br/>
 
 ## Step 3: Place Cloudfront in front of the S3 Bucket
-<img src="https://github.com/user-attachments/assets/9522cc9d-8500-4eeb-82fd-6d017b148af9"/>
+<img src="https://github.com/user-attachments/assets/bc98870c-b87a-41e2-8383-1b59952d3d77"/>
 <br/> The web app is fully functionl however it is not secure and uses HTTP instead of HTTPS. This means that users interact directly with our S3 which is not good practice. <br/> 
 <br/> Navigate to CloudFront --> create distribution --> pick the S3 bucket Domain --> Origin access control --> create new OAC --> Default root object = index.html <br/>
 <img src="https://github.com/user-attachments/assets/249a2950-f3db-444d-812a-3977cc7e4efc"/>
