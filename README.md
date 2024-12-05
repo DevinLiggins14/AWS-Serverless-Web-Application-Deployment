@@ -244,7 +244,7 @@ aws cognito-idp initiate-auth \
 <img src="https://github.com/user-attachments/assets/0ed2efc6-4666-4ac4-963d-9663d46ca064"/>
 
  
-</> Congratulations! This project successfully delivered a fully functional, serverless web application leveraging AWS services like API Gateway, Lambda, DynamoDB, S3, and CloudFront. With Cognito integration, we secured the API Gateway, ensuring authentication and user management. The system was designed to efficiently handle student data, demonstrating the power and scalability of modern serverless architectures. This marks the completion of a significant achievement in creating a secure, scalable, and production-ready application. Great work! 🎉
+<br/> Congratulations! This project successfully delivered a fully functional, serverless web application leveraging AWS services like API Gateway, Lambda, DynamoDB, S3, and CloudFront. With Cognito integration, we secured the API Gateway, ensuring authentication and user management. The system was designed to efficiently handle student data, demonstrating the power and scalability of modern serverless architectures. This marks the completion of a significant achievement in creating a secure, scalable, and production-ready application. Great work! 🎉
 
 
  <br/> 
