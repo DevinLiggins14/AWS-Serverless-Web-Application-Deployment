@@ -65,6 +65,7 @@
 <img src="https://github.com/user-attachments/assets/71341329-212e-48bf-b08a-a3227927e45b"/>
 <br/> With our new function created let's now enter the code needed to get data from the DB table (Can also be found under worker_scripts) <br/>
 ```.py
+# Note check index.html for the updated configuration
 import json
 import boto3
 
