@@ -6,22 +6,22 @@
     <title>Student Data</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Light gray background */
-            color: #333; /* Dark gray text */
-            font-family: Arial, sans-serif; /* Use Arial font */
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
         }
 
         h1 {
-            color: #007bff; /* Blue heading text */
+            color: #007bff;
         }
 
         .container {
-            max-width: 600px; /* Limit width to 600px */
-            margin: 0 auto; /* Center the container */
-            padding: 20px; /* Add padding */
-            background-color: #fff; /* White background */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         input[type="text"], input[type="submit"] {
@@ -34,13 +34,13 @@
         }
 
         input[type="submit"] {
-            background-color: #007bff; /* Blue submit button */
-            color: #fff; /* White text */
-            cursor: pointer; /* Add pointer cursor */
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
         }
 
         input[type="submit"]:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3;
         }
 
         table {
@@ -55,13 +55,14 @@
         }
 
         th {
-            background-color: #f2f2f2; /* Light gray header background */
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Save and View Student Data</h1>
+        
         <label for="studentid">Student ID:</label><br>
         <input type="text" name="studentid" id="studentid"><br>
         
@@ -81,6 +82,7 @@
         <br>
         <input type="submit" id="getstudents" value="View all Students">
         <br><br>
+        
         <div id="showStudents">
             <table id="studentTable">
                 <colgroup>
@@ -98,13 +100,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Student data will be displayed here -->
+                    <!-- Student data will be dynamically inserted here -->
                 </tbody>
             </table>
         </div>
     </div>
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
     <script src="scripts.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 </body>
 </html>
