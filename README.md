@@ -1,4 +1,19 @@
-# AWS-Serverless-Web-Application-Deployment
+<table>
+  <tr>
+    <td><h1>AWS-Serverless-Web-Application-Deployment</h1></td>
+    <td>
+      <p align="right">
+        <img src="https://raw.githubusercontent.com/Thomas-George-T/Thomas-George-T/master/assets/aws.svg" alt="aws" width="60" height="60"/> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html" width="60" height="60"/> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" width="60" height="60"/> 
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+
 <h2>Description</h2>
 <br/> In this project we will deploy a serverless web application built on AWS, optimized for scalability and low maintenance. It uses CloudFront to deliver static content from S3 Bucket and API Gateway to handle dynamic requests processed by Lambda functions, with DynamoDB for data storage. Optional integrations include Route 53 for custom domains and Cognito for user authentication, making it a flexible serverless deployment and production ready!
 
